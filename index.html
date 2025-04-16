@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vishal Gaud - Portfolio</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      scroll-behavior: smooth;
+    }
+
+    .icon-hover {
+      transition: color 0.3s, transform 0.3s;
+    }
+
+    .icon-hover:hover {
+      color: #0d6efd;
+      transform: scale(1.15);
+    }
+
+    .hero {
+      padding: 100px 0;
+      background-color: #f8f9fa;
+      text-align: center;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .project-thumb {
+      height: 180px;
+      object-fit: cover;
+      width: 100%;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .hero {
+        min-height: 70vh;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+      }
+      
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Vishal Gaud</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <!-- Navigation links -->
+      <ul class="navbar-nav ms-auto align-items-center">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="/projects.html">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="/certificates.html">Certificates</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+
+      <!-- Social Icons -->
+      <div class="d-flex align-items-center ms-4 ps-3 border-start border-secondary gap-3">
+        <a href="https://github.com/VishalGaud17" target="_blank" class="text-white icon-hover">
+          <i class="bi bi-github fs-5"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/vishalgaud/" target="_blank" class="text-white icon-hover">
+          <i class="bi bi-linkedin fs-5"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<section class="hero bg-light py-1" data-aos="fade-up">
+    <div class="container text-center">
+      <h1 class="display-4 fw-bold mb-1" data-aos="zoom-in">Hi, I'm Vishal Gaud</h1>
+      <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200">
+        Data Analyst · Power BI Developer · ML Enthusiast
+      </p>
+      <!-- <a href="projects.html" class="btn btn-dark btn-lg px-4" data-aos="fade-up" data-aos-delay="300">
+        <i class="bi bi-briefcase-fill me-2"></i>View My Projects
+      </a> -->
+    </div>
+  </section>
+  
+
+<!-- About -->
+<section id="about" class="py-5 bg-white" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center mb-5">About Me</h2>
+    <div class="row align-items-center">
+      
+      <!-- Left Text -->
+      <div class="col-md-7">
+        <p>Hello! I’m <strong>Vishal Gaud</strong>, a data-driven problem solver with a passion for building impactful solutions through <strong>Power BI dashboards</strong>, <strong>Python-driven automation</strong>, and <strong>machine learning models</strong>.</p>
+        
+        <p>I specialize in transforming raw data into insightful stories using modern analytics tools. Whether it's building an interactive dashboard or training an ML model, I enjoy making data accessible and actionable.</p>
+        
+        <ul class="mt-3">
+          <li><strong>🎓 BSc IT Graduate</strong> (2023) from Vedanta College</li>
+          <li><strong>📈 Skills:</strong> Power BI, SQL, Python, Streamlit, Machine Learning</li>
+          <li><strong>🎯 Strengths:</strong> Storytelling with data, clean visual design, fast learning</li>
+        </ul>
+      </div>
+
+      <!-- Right Visual Block -->
+      <div class="col-md-5">
+        <div class="bg-light rounded p-4 shadow-sm">
+          <h5 class="mb-3 text-center">Key Highlights</h5>
+          <ul class="list-unstyled small">
+            <li><i class="bi bi-check-circle text-success me-2"></i> Power BI dashboards deployed for real clients</li>
+            <li><i class="bi bi-check-circle text-success me-2"></i> Built ML models for real-time classification and analysis</li>
+            <li><i class="bi bi-check-circle text-success me-2"></i> SQL expertise: Joins, CTEs, views, procedures</li>
+            <li><i class="bi bi-check-circle text-success me-2"></i> Certified in Python, ML, and Power BI</li>
+            <li><i class="bi bi-check-circle text-success me-2"></i> GitHub & Streamlit apps to showcase live work</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mb-4" data-aos="fade-up">Skills</h2>
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+          <h5 class="text-secondary">📊 Data Analytics</h5>
+          <ul class="list-unstyled">
+            <li>Data Cleaning</li>
+            <li>Trend Analysis</li>
+            <li>A/B Testing</li>
+            <li>Predictive Modeling</li>
+          </ul>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <h5 class="text-secondary">⌨ Tools & Programming</h5>
+          <ul class="list-unstyled">
+            <li>Python (Pandas, NumPy, Scikit-learn)</li>
+            <li>Power BI (DAX, Power Query)</li>
+            <li>Excel, Streamlit, GitHub</li>
+          </ul>
+        </div>
+        <div class="col-md-4" data-aos="fade-left" data-aos-delay="300">
+          <h5 class="text-secondary">💾 Databases</h5>
+          <ul class="list-unstyled">
+            <li>SQL (Joins, CTEs, Procedures)</li>
+            <li>PostgreSQL</li>
+            <li>MySQL</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- Contact -->
+<section id="contact" class="py-5 bg-white" data-aos="fade-up">
+  <div class="container">
+    <h2 class="text-center mb-5">Get in Touch</h2>
+    <div class="row justify-content-center shadow rounded-4 bg-white overflow-hidden">
+      
+      <!-- Left: Contact Info -->
+      <div class="col-md-5 bg-dark text-white p-4 d-flex flex-column justify-content-center">
+        <h4 class="mb-4"><i class="bi bi-chat-left-text"></i> Contact Info</h4>
+        <p><i class="bi bi-envelope-fill me-2"></i> gaudvishal1709@gmail.com</p>
+        <p><i class="bi bi-telephone-fill me-2"></i> 7249342768</p>
+        <p><i class="bi bi-github me-2"></i> 
+          <a href="https://github.com/VishalGaud17" target="_blank" class="text-white text-decoration-underline">GitHub</a>
+        </p>
+        <p><i class="bi bi-linkedin me-2"></i> 
+          <a href="https://www.linkedin.com/in/vishalgaud/" target="_blank" class="text-white text-decoration-underline">LinkedIn</a>
+        </p>
+      </div>
+
+      <!-- Right: Contact Form -->
+      <div class="col-md-7 p-5">
+        <h5 class="mb-4 text-dark">Send me a message</h5>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+          <div class="mb-3">
+            <label for="name" class="form-label">Your Name *</label>
+            <input type="text" class="form-control" name="name" id="name" placeholder="John Doe" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Your Email *</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="email@example.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="message" class="form-label">Message *</label>
+            <textarea class="form-control" name="message" id="message" rows="5" placeholder="How can I help you?" required></textarea>
+          </div>
+          <div class="text-start">
+            <button type="submit" class="btn btn-dark px-4">Send Message</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Vishal Gaud. All rights reserved.</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+</body>
+</html>

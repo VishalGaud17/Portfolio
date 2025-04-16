@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vishal Gaud - Projects</title>
+
+  <!-- Bootstrap & Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+    }
+
+    .section-heading {
+      margin-top: 60px;
+      margin-bottom: 30px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .card {
+      border: none;
+      border-radius: 15px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease;
+      height: 100%;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card .tech-tags {
+      font-size: 0.9rem;
+    }
+
+    .back-btn {
+      margin: 20px 0;
+    }
+
+    footer {
+      background-color: #343a40;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+  </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+
+<!-- Back Button -->
+<div class="container">
+  <div class="back-btn">
+    <a href="/index.html" class="btn btn-outline-secondary btn-sm">
+      <i class="bi bi-arrow-left"></i> Back to Home
+    </a>
+  </div>
+
+  <h2 class="section-heading" data-aos="fade-up">My Projects</h2>
+  <div class="row g-4">
+
+    <!-- Project 1 -->
+    <div class="col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+      <div class="card w-100">
+        <div class="card-body d-flex flex-column p-4">
+          <h5 class="card-title">Credit Score Classification</h5>
+          <p class="card-text">Streamlit app for real-time credit score predictions.</p>
+          <p class="tech-tags text-muted"><i class="bi bi-tools me-1"></i> Python · Streamlit · Scikit-learn</p>
+          <button class="btn btn-dark btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#modalCreditScore">View Details</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="col-md-4 d-flex" data-aos="fade-up" data-aos-delay="200">
+      <div class="card w-100">
+        <div class="card-body d-flex flex-column p-4">
+          <h5 class="card-title">Superstore Sales Dashboard</h5>
+          <p class="card-text">Power BI dashboard analyzing sales performance and trends.</p>
+          <p class="tech-tags text-muted"><i class="bi bi-bar-chart-line me-1"></i> Power BI · DAX · Excel</p>
+          <button class="btn btn-dark btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#modalSuperstore">View Details</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="col-md-4 d-flex" data-aos="fade-up" data-aos-delay="300">
+      <div class="card w-100">
+        <div class="card-body d-flex flex-column p-4">
+          <h5 class="card-title">Employee Data Analysis</h5>
+          <p class="card-text">Analyzed employee trends and salary distributions using SQL.</p>
+          <p class="tech-tags text-muted"><i class="bi bi-database me-1"></i> SQL · MySQL</p>
+          <button class="btn btn-dark btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#modalEmp">View Details</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="col-md-4 d-flex" data-aos="fade-up" data-aos-delay="100">
+      <div class="card w-100">
+        <div class="card-body d-flex flex-column p-4">
+          <h5 class="card-title">Employee Data Analysis (Adv)</h5>
+          <p class="card-text">Analyzed employee trends and salary distributions using SQL.</p>
+          <p class="tech-tags text-muted"><i class="bi bi-tools me-1"></i> SQL · MySQL</p>
+          <button class="btn btn-dark btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#modalEmpAdv">View Details</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="col-md-4 d-flex" data-aos="fade-up" data-aos-delay="200">
+      <div class="card w-100">
+        <div class="card-body d-flex flex-column p-4">
+          <h5 class="card-title">Netflix Userbase Analysis</h5>
+          <p class="card-text">Power BI dashboard analyzing Netflix Userbase Analysis</p>
+          <p class="tech-tags text-muted"><i class="bi bi-bar-chart-line me-1"></i> Power BI · DAX · Excel</p>
+          <button class="btn btn-dark btn-sm mt-auto" data-bs-toggle="modal" data-bs-target="#modalNetflix">View Details</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- Modals -->
+<!-- Modal: Credit Score -->
+<div class="modal fade" id="modalCreditScore" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 rounded shadow">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title">Credit Score Classification</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-5">
+          <img src="/img/knn.png" class="img-fluid rounded" alt="Credit Score">
+        </div>
+        <div class="col-md-7">
+          <p><strong>Overview : </strong>A machine learning project that classifies customer credit scores based on 
+            demographic and financial features using the K-Nearest Neighbors (KNN) algorithm. The model is 
+            optimized through cross-validation and evaluated using classification reports. It is deployed as 
+            a .pkl file and integrated into a Streamlit web app that allows users to input data and receive real-time 
+            credit score predictions.</p>
+          <p><strong>Tools:</strong> Python, Scikit-learn, Streamlit</p>
+          <a href="https://github.com/VishalGaud17/Credit-Score" target="_blank" class="btn btn-outline-dark btn-sm mt-2">
+            <i class="bi bi-box-arrow-up-right me-1"></i> GitHub Repo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Superstore -->
+<div class="modal fade" id="modalSuperstore" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 rounded shadow">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title">Superstore Sales Dashboard</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-5">
+          <img src="/img/superstore.png" class="img-fluid rounded" alt="Superstore Sales Dashboard">
+        </div>
+        <div class="col-md-7">
+          <p><strong>Overview : </strong>An interactive business intelligence project built using Power BI to 
+            analyze the Superstore dataset. The dashboards provide deep insights into sales performance, 
+            profitability, customer segments, and shipping trends across regions and time periods. 
+            The project features dynamic filtering, robust data modeling with DAX and Power Query, and 
+            supports real-time insights through scheduled data refresh. Segment-wise analysis reveals key 
+            business patterns, including profitability differences across consumer, corporate, 
+            and home office clients.</p>
+          <p><strong>Tools:</strong> Power BI, DAX, Excel</p>
+          <a href="https://github.com/VishalGaud17/SuperStore" target="_blank" class="btn btn-outline-dark btn-sm mt-2">
+            <i class="bi bi-box-arrow-up-right me-1"></i> GitHub Repo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Employee Analysis -->
+<div class="modal fade" id="modalEmp" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 rounded shadow">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title">Employee Data Analysis</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-5">
+          <img src="/img/empsql.png" class="img-fluid rounded" alt="Employee Data Analysis">
+        </div>
+        <div class="col-md-7">
+          <p><strong>Overview : </strong> A comprehensive SQL-based analysis project focused on extracting insights 
+            from employee data related to department distribution, salary structures, hiring trends, performance 
+            evaluations, and tenure. The analysis is performed using a staging table to maintain original data 
+            integrity while enabling transformations. The project incorporates complex queries using CTEs, 
+            window functions, and aggregations, along with views for quick access to specific employee segments 
+            such as IT department staff and UAE-based employees.</p>
+          <p><strong>Tools:</strong> SQL, MySQL</p>
+          <a href="https://github.com/VishalGaud17/SQL_Employee_Data_Analysis" target="_blank" class="btn btn-outline-dark btn-sm mt-2">
+            <i class="bi bi-box-arrow-up-right me-1"></i> GitHub Repo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Emp Sql -->
+<div class="modal fade" id="modalEmpAdv" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 rounded shadow">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title">Credit Score Classification</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-5">
+          <img src="/img/empsqladv.png" class="img-fluid rounded" alt="Credit Score">
+        </div>
+        <div class="col-md-7">
+          <p><strong>Overview : </strong>Employee Database Management using SQL
+            A structured SQL project focused on managing and analyzing employee data through schema design, 
+            data insertion, and query execution. It includes creation of relational tables for employees, 
+            departments, salaries, and promotions, along with analytical queries to uncover trends in hiring, 
+            compensation, and performance. The project uses staging tables to preserve raw data and incorporates 
+            SQL views for quick access to department- and location-specific insights. Designed for hands-on 
+            practice with key SQL operations like CREATE, INSERT, SELECT, UPDATE, and DELETE.</p>
+          <p><strong>Tools:</strong> SQL, MySQL</p>
+          <a href="https://github.com/VishalGaud17/Emp_SQL" target="_blank" class="btn btn-outline-dark btn-sm mt-2">
+            <i class="bi bi-box-arrow-up-right me-1"></i> GitHub Repo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal: Netflix -->
+<div class="modal fade" id="modalNetflix" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content border-0 rounded shadow">
+      <div class="modal-header border-bottom-0">
+        <h5 class="modal-title">Superstore Sales Dashboard</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body row">
+        <div class="col-md-5">
+          <img src="/img/nf.png" class="img-fluid rounded" alt="Superstore Sales Dashboard">
+        </div>
+        <div class="col-md-7">
+          <p><strong>Overview : </strong>An interactive data visualization project analyzing Netflix's 
+            global userbase through Power BI dashboards. The project explores user growth, content engagement, 
+            and regional distribution using custom DAX measures and advanced data modeling. Key features 
+            include dynamic filtering, user segmentation, and KPI tracking for metrics such as retention 
+            and engagement. The dashboard enables stakeholders to derive actionable insights and make 
+            data-driven decisions based on user behavior across regions.p>
+          <p><strong>Tools:</strong> Power BI, DAX, Excel</p>
+          <a href="https://github.com/VishalGaud17/Netflix" target="_blank" class="btn btn-outline-dark btn-sm mt-2">
+            <i class="bi bi-box-arrow-up-right me-1"></i> GitHub Repo
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="mt-auto">
+  <p class="mb-0">&copy; 2025 Vishal Gaud. All rights reserved.</p>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
+</body>
+</html>
